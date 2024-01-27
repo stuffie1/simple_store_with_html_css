@@ -1,0 +1,219 @@
+.nav1 div a img ,
+.fi,
+.si,
+.ti{
+
+    filter: grayscale(1);
+
+}
+
+.nav1 a img:hover,
+.fi:hover,
+.si:hover,
+.ti:hover{
+    filter: grayscale(0);
+}
+
+a:hover {
+    color: rgb(255, 72, 0);
+}
+
+.div1 {
+    transition: all 1s;
+
+}
+
+.div1:hover {
+    opacity: 70%;
+    background-position: center;
+}
+
+.img1 {
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.div1:hover .img1 {
+    margin-left: 20px;
+}
+
+.div2 {
+    transition: all .3s;
+
+}
+
+.div2:hover {
+    opacity: 90%;
+    background-position: right;
+
+}
+
+.div2:hover .img1 {
+    margin-left: 20px;
+}
+
+.div3 {
+    transition: all 1s;
+
+}
+
+.div3:hover {
+    opacity: 90%;
+    background-position: right;
+
+}
+
+.div3:hover .img1 {
+    margin-left: 20px;
+}
+
+.div2 {
+    background-image: url(images/Pins/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 30%;
+    opacity: 80%;
+}
+
+.div3 {
+    background-image: url(images/Pins/25.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 68%;
+}
+
+.a {
+    color: black;
+}
+
+.a:hover {
+    color: rgb(255, 17, 0);
+}
+
+.first {
+    height: 30px;
+    width: 30px;
+    opacity: 0%;
+    position: absolute;
+    top: 300px;
+    left: 25%;
+    transition: all .3s;
+}
+.second{
+    height: 30px;
+    width: 30px;
+    opacity: 0%;
+    position: absolute;
+    top: 300px;
+    left: 45%;
+    transition: all .5s;
+}
+.therth{
+    height: 30px;
+    width: 30px;
+    opacity: 0%;
+    position: absolute;
+    top: 300px;
+    left: 65%;
+    transition: all .7s;
+}
+
+.card1:hover .first,
+.card1:hover .second,
+.card1:hover .therth{
+    opacity: 100%;
+    position: absolute;
+    top: 250px;
+    z-index: 100;
+    
+}
+.card1{
+    width: 24%;
+    height: 420px;
+}
+.card1:hover .imgg{
+    opacity: 100%;
+    
+    
+}
+.card1:hover .imggg{
+    opacity: 0;
+}
+.imgg{
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.2s;
+}
+.divv{
+    margin-top: 150px;
+    width: 10%;
+    height: 30px;
+}
+hr{
+    color: black;
+    transition: width 0.7s;
+    width: 10%;
+}
+.divv:hover+hr{
+  
+    width: 0%;
+}
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .kids {
+        display: none;
+    }
+
+    .div2 {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 500px;
+    }
+
+    .div3 {
+        width: 100%;
+        height: 500px;
+    }
+    .card1{
+        width: 32%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .kids {
+        display: none;
+    }
+
+    .women {
+        display: none;
+    }
+
+    .div2 {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 500px;
+    }
+
+    .div3 {
+        width: 100%;
+        height: 500px;
+    }
+    .card1{
+        width: 48%;
+    }
+
+
+}
+@media screen and (max-width:576px) {
+ 
+    .card1{
+        width: 80%;
+        margin: auto;
+    }
+
+}
